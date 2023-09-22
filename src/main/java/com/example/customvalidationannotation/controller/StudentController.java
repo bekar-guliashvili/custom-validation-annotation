@@ -23,7 +23,7 @@ public class StudentController {
         return new ResponseEntity<>(service.saveStudent(student), HttpStatus.CREATED);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Student> addStudent(@PathVariable Long id){
         return ResponseEntity.ok(service.getStudentById(id));
     }
